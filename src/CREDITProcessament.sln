@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CREDITProcessament.Data", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CREDITProcessament.Data.Core", "CREDITProcessament.Data.Core\CREDITProcessament.Data.Core.csproj", "{4E98CD0B-5AD2-4255-8D77-C1C32EEF6965}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CREDITProcessament.Data.Repository", "CREDITProcessament.Data.Repository\CREDITProcessament.Data.Repository.csproj", "{4B36D091-2310-4166-8540-EE26FBC9ED35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4E98CD0B-5AD2-4255-8D77-C1C32EEF6965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E98CD0B-5AD2-4255-8D77-C1C32EEF6965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E98CD0B-5AD2-4255-8D77-C1C32EEF6965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B36D091-2310-4166-8540-EE26FBC9ED35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B36D091-2310-4166-8540-EE26FBC9ED35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B36D091-2310-4166-8540-EE26FBC9ED35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B36D091-2310-4166-8540-EE26FBC9ED35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A} = {D01280CB-717F-4B33-A966-A39B02641D42}
 		{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00} = {408F6FAA-1FD8-4995-BBC1-F18F240BE622}
 		{4E98CD0B-5AD2-4255-8D77-C1C32EEF6965} = {408F6FAA-1FD8-4995-BBC1-F18F240BE622}
+		{4B36D091-2310-4166-8540-EE26FBC9ED35} = {408F6FAA-1FD8-4995-BBC1-F18F240BE622}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {922D73D1-544B-48D2-9C2B-F576ADB07855}
