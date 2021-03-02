@@ -4,5 +4,6 @@
     {
         public string CPF { get; set; }
         public string Name { get; set; }
+        public ProcessamentModel Processament { get; set; }
     }
 }
