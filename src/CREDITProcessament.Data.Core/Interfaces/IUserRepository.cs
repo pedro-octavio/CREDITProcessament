@@ -8,8 +8,8 @@ namespace CREDITProcessament.Data.Core.Interfaces
     {
         Task<IEnumerable<UserModel>> GetAllAsync();
         Task<UserModel> GetByCPFAsync(string cpf);
-        Task AddAsync();
-        Task UpdateAsync();
-        Task DeleteAsync();
+        Task AddAsync(UserModel user);
+        Task UpdateAsync(UserModel user);
+        Task DeleteAsync(UserModel user);
     }
 }
