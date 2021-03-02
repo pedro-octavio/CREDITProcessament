@@ -9,9 +9,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{408F6FAA-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{17D5FEF6-6F2A-43E9-831D-498212792EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CREDITProcessament.Domain", "CREDITProcessament.Domain\CREDITProcessament.Domain.csproj", "{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CREDITProcessament.Data", "CREDITProcessament.Data\CREDITProcessament.Data.csproj", "{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A} = {D01280CB-717F-4B33-A966-A39B02641D42}
+		{4FBDF565-5A1B-49B9-BD75-73D30C1D7C00} = {408F6FAA-1FD8-4995-BBC1-F18F240BE622}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {922D73D1-544B-48D2-9C2B-F576ADB07855}
