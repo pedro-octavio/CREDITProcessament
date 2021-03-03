@@ -32,7 +32,11 @@ namespace CREDITProcessament.Domain.Services.Services
         {
             var user = await userRepository.GetByCPFAsync(cpf);
 
-            return mapper.Map<GetUserByCPFResponseModel>(user);
+            switch (user != null)
+            {
+                case true: return mapper.Map<GetUserByCPFResponseModel>(user);
+                case false: throw new Exception("The CPF doenst exists.");
+            }
         }
 
         public async Task AddAsync(AddUserRequestModel requestModel)
