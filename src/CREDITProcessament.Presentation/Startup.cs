@@ -1,8 +1,10 @@
 using Autofac;
+using CREDITProcessament.Data.Context;
 using CREDITProcessament.Infra.IOC;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,6 +24,8 @@ namespace CREDITProcessament.Presentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddFluentValidation();
+
+            services.AddDbContext<ApplicationDataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CREDITProcessamentDB"), m => m.MigrationsAssembly(typeof(Startup).Assembly.ToString())));
 
             services.AddSwaggerGen(c =>
             {
