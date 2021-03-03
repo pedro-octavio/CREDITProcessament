@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CREDITProcessament.Presentation.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    [Migration("20210303185928_InitialMigration")]
+    [Migration("20210303193608_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
