@@ -6,10 +6,10 @@ open CREDITProcessament.Data.Core.Interfaces
 open CREDITProcessament.Data.Repository.Repositories
 open CREDITProcessament.Domain.Core.Interfaces
 open CREDITProcessament.Domain.Mappers
+open CREDITProcessament.Domain.Models.RequestModels
 open CREDITProcessament.Domain.Services.Services
 open CREDITProcessament.Domain.Validators
 open FluentValidation
-open CREDITProcessament.Domain.Models.RequestModels
 
 type ConfigurationIOC() = class
 

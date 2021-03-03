@@ -1,3 +1,5 @@
+using Autofac;
+using CREDITProcessament.Infra.IOC;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +27,11 @@ namespace CREDITProcessament.Presentation
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CREDITProcessament.Presentation", Version = "v1" });
             });
+        }
+
+        public void ConfigureContainer(ContainerBuilder containerBuilder)
+        {
+            containerBuilder.RegisterModule(new ModuleIOC());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
