@@ -4,6 +4,7 @@ using CREDITProcessament.Data.Models;
 using CREDITProcessament.Domain.Core.Interfaces;
 using CREDITProcessament.Domain.Models.RequestModels;
 using CREDITProcessament.Domain.Models.ResponseModels;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -36,7 +37,18 @@ namespace CREDITProcessament.Domain.Services.Services
 
         public async Task AddAsync(AddUserRequestModel requestModel)
         {
-            await userRepository.AddAsync(mapper.Map<UserModel>(requestModel));
+            var user = await userRepository.GetByCPFAsync(requestModel.CPF);
+
+            switch (user == null)
+            {
+                case true:
+                    {
+                        await userRepository.AddAsync(mapper.Map<UserModel>(requestModel));
+
+                        break;
+                    }
+                case false: throw new Exception("The CPF already exists.");
+            }
         }
 
         public async Task UpdateAsync(UpdateUserRequestModel requestModel)
