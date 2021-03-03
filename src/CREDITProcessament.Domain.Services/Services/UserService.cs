@@ -53,7 +53,18 @@ namespace CREDITProcessament.Domain.Services.Services
 
         public async Task UpdateAsync(UpdateUserRequestModel requestModel)
         {
-            await userRepository.UpdateAsync(mapper.Map<UserModel>(requestModel));
+            var user = await userRepository.GetByCPFAsync(requestModel.CPF);
+
+            switch (user != null)
+            {
+                case true:
+                    {
+                        await userRepository.UpdateAsync(mapper.Map<UserModel>(requestModel));
+
+                        break;
+                    }
+                case false: throw new Exception("The user doenst exists.");
+            }
         }
 
         public async Task DeleteAsync(string cpf)
