@@ -44,9 +44,9 @@ namespace CREDITProcessament.Domain.Services.Services
             await userRepository.UpdateAsync(mapper.Map<UserModel>(requestModel));
         }
 
-        public async Task DeleteAsync(DeleteUserRequestModel requestModel)
+        public async Task DeleteAsync(string cpf)
         {
-            var user = await GetByCPFAsync(requestModel.CPF);
+            var user = await GetByCPFAsync(cpf);
 
             await userRepository.DeleteAsync(mapper.Map<UserModel>(user));
         }

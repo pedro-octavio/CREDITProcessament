@@ -11,6 +11,6 @@ namespace CREDITProcessament.Domain.Core.Interfaces
         Task<GetUserByCPFResponseModel> GetByCPFAsync(string cpf);
         Task AddAsync(AddUserRequestModel requestModel);
         Task UpdateAsync(UpdateUserRequestModel requestModel);
-        Task DeleteAsync(DeleteUserRequestModel requestModel);
+        Task DeleteAsync(string cpf);
     }
 }
