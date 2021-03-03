@@ -19,7 +19,7 @@ namespace CREDITProcessament.Data.Configurations.Tables
                     .IsRequired();
 
                 builder.Property(x => x.UserCPF)
-                    .HasMaxLength(10)
+                    .HasMaxLength(11)
                     .IsFixedLength()
                     .IsRequired();
 

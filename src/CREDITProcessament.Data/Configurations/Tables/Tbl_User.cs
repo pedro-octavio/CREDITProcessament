@@ -24,6 +24,7 @@ namespace CREDITProcessament.Data.Configurations.Tables
 
                 builder.HasOne(x => x.Processament)
                     .WithOne()
+                    .HasForeignKey<ProcessamentModel>(x => x.UserCPF)
                     .OnDelete(DeleteBehavior.Cascade);
             });
         }
