@@ -21,11 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CREDITProcessament.Domain.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CREDITProcessament.Domain.Services", "CREDITProcessament.Domain.Services\CREDITProcessament.Domain.Services.csproj", "{46A94CC2-C049-490B-94C5-A08F5FD73BD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CREDITProcessament.API", "CREDITProcessament.API\CREDITProcessament.API.csproj", "{18456A31-B4A5-4ADB-BAC6-36B8DEC9222C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CREDITProcessament.API", "CREDITProcessament.API\CREDITProcessament.API.csproj", "{18456A31-B4A5-4ADB-BAC6-36B8DEC9222C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{3BCCFD7E-2D70-4394-8A7C-E3AA5532B160}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CREDITProcessament.Infra.IOC", "CREDITProcessament.Infra.IOC\CREDITProcessament.Infra.IOC.fsproj", "{496B8150-FCB8-47BA-B588-54AF155128A8}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "CREDITProcessament.Infra.IOC", "CREDITProcessament.Infra.IOC\CREDITProcessament.Infra.IOC.fsproj", "{496B8150-FCB8-47BA-B588-54AF155128A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
