@@ -11,11 +11,14 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="AutoMapper.Contrib.Autofac.DependencyInjection" Version="5.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CREDITProcessament.Data.Core\CREDITProcessament.Data.Core.csproj" />
     <ProjectReference Include="..\CREDITProcessament.Data.Repository\CREDITProcessament.Data.Repository.csproj" />
+    <ProjectReference Include="..\CREDITProcessament.Domain.Core\CREDITProcessament.Domain.Core.csproj" />
+    <ProjectReference Include="..\CREDITProcessament.Domain.Services\CREDITProcessament.Domain.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
