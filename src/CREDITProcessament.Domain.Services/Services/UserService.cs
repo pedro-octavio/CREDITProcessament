@@ -73,9 +73,18 @@ namespace CREDITProcessament.Domain.Services.Services
 
         public async Task DeleteAsync(string cpf)
         {
-            var user = await GetByCPFAsync(cpf);
+            var user = await userRepository.GetByCPFAsync(cpf);
 
-            await userRepository.DeleteAsync(mapper.Map<UserModel>(user));
+            switch (user != null)
+            {
+                case true:
+                    {
+                        await userRepository.DeleteAsync(mapper.Map<UserModel>(user));
+
+                        break;
+                    }
+                case false: throw new Exception("The CPF doenst exists.");
+            }
         }
     }
 }
