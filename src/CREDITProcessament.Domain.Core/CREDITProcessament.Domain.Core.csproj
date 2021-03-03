@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\CREDITProcessament.Domain\CREDITProcessament.Domain.csproj" />
   </ItemGroup>
 
 </Project>

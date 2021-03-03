@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\CREDITProcessament.Data.Core\CREDITProcessament.Data.Core.csproj" />
+    <ProjectReference Include="..\CREDITProcessament.Domain.Core\CREDITProcessament.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>
