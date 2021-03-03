@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D01280
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{408F6FAA-1FD8-4995-BBC1-F18F240BE622}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{17D5FEF6-6F2A-43E9-831D-498212792EED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{17D5FEF6-6F2A-43E9-831D-498212792EED}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CREDITProcessament.Domain", "CREDITProcessament.Domain\CREDITProcessament.Domain.csproj", "{24C838A0-6901-4ACA-9FB1-5ED8006CFC4A}"
 EndProject
