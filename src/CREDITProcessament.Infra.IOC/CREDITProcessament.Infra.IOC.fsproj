@@ -6,10 +6,16 @@
 
   <ItemGroup>
     <Compile Include="ConfigurationIOC.fs" />
+    <Compile Include="ModuleIOC.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CREDITProcessament.Data.Core\CREDITProcessament.Data.Core.csproj" />
+    <ProjectReference Include="..\CREDITProcessament.Data.Repository\CREDITProcessament.Data.Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>
