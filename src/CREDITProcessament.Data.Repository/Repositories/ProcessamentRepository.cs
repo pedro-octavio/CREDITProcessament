@@ -32,7 +32,7 @@ namespace CREDITProcessament.Data.Repository.Repositories
             return await applicationDataContext.Processaments.Where(x => x.IsProcessed == processed).OrderBy(x => x.CreateDate).ToListAsync();
         }
 
-        public async Task<ProcessamentModel> GetByUserCPF(string cpf)
+        public async Task<ProcessamentModel> GetByUserCPFAsync(string cpf)
         {
             var processament = await applicationDataContext.Processaments.Where(x => x.UserCPF == cpf).FirstOrDefaultAsync();
 
