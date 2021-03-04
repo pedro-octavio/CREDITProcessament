@@ -9,6 +9,7 @@ namespace CREDITProcessament.Data.Core.Interfaces
     {
         Task<IEnumerable<ProcessamentModel>> GetAllAsync(DateTime? startDate, DateTime? endDate);
         Task<IEnumerable<ProcessamentModel>> GetAllAsync(bool processed);
+        Task<ProcessamentModel> GetByUserCPF(string cpf);
         Task AddAsync(ProcessamentModel processament);
         Task UpdateAsync(ProcessamentModel processament);
         Task DeleteAsync(ProcessamentModel processament);
