@@ -22,7 +22,7 @@ namespace CREDITProcessament.Data.Configurations.Tables
                     .HasMaxLength(120)
                     .IsRequired();
 
-                builder.HasOne(x => x.Processament)
+                builder.HasOne<ProcessamentModel>()
                     .WithOne()
                     .HasForeignKey<ProcessamentModel>(x => x.UserCPF)
                     .OnDelete(DeleteBehavior.Cascade);
