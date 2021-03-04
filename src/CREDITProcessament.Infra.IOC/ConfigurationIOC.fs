@@ -21,6 +21,14 @@ type ConfigurationIOC() = class
         containerBuilder.RegisterType<GetUserByCPFValidator>().As<IValidator<GetUserByCPFRequestModel>>() |> ignore
         containerBuilder.RegisterType<UpdateUserValidator>().As<IValidator<UpdateUserRequestModel>>() |> ignore
 
+        containerBuilder.RegisterType<AddProcessamentValidator>().As<IValidator<AddProcessamentRequestModel>>() |> ignore
+        containerBuilder.RegisterType<DeleteProcessamentValidator>().As<IValidator<DeleteProcessamentRequestModel>>() |> ignore
+        containerBuilder.RegisterType<DeleteRangeProcessamentValidator>().As<IValidator<DeleteRangeProcessamentRequestModel>>() |> ignore
+        containerBuilder.RegisterType<GetAllProcessamentsByCreateDateValidator>().As<IValidator<GetAllProcessamentsByCreateDateRequestModel>>() |> ignore
+        containerBuilder.RegisterType<GetAllProcessamentsByProcessedValidator>().As<IValidator<GetAllProcessamentsByProcessedRequestModel>>() |> ignore
+        containerBuilder.RegisterType<GetProcessamentByUserCPFValidator>().As<IValidator<GetProcessamentByUserCPFRequestModel>>() |> ignore
+        containerBuilder.RegisterType<UpdateProcessamentValidator>().As<IValidator<UpdateProcessamentRequestModel>>() |> ignore
+
         containerBuilder.RegisterType<UserRepository>().As<IUserRepository>() |> ignore
         containerBuilder.RegisterType<ProcessamentRepository>().As<IProcessamentRepository>() |> ignore
 
