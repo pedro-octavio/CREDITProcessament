@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System;
 
 namespace CREDITProcessament.Presentation
 {
@@ -29,7 +30,23 @@ namespace CREDITProcessament.Presentation
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CREDITProcessament.Presentation", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "CREDITProcessament",
+                    Version = "v1",
+                    Description = "CREDITProcessament is a project to process credit from one or more users.",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Pedro Octávio",
+                        Email = "pedrooctavio.almeida@tcs.com",
+                        Url = new Uri("https://github.com/pedro-octavio")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "MIT",
+                        Url = new Uri("https://github.com/pedro-octavio/CREDITProcessament/blob/main/LICENSE")
+                    }
+                });
             });
         }
 
