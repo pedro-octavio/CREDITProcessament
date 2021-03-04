@@ -29,7 +29,7 @@ namespace CREDITProcessament.Data.Configurations.Tables
                 builder.Property(x => x.IsProcessed)
                     .IsRequired();
 
-                builder.Property(x => x.LastProcessedDate)
+                builder.Property(x => x.CreateDate)
                     .IsRequired();
             });
         }

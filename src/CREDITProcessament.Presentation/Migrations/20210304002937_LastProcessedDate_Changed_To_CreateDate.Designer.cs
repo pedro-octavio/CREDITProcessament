@@ -4,14 +4,16 @@ using CREDITProcessament.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CREDITProcessament.Presentation.Migrations
 {
     [DbContext(typeof(ApplicationDataContext))]
-    partial class ApplicationDataContextModelSnapshot : ModelSnapshot
+    [Migration("20210304002937_LastProcessedDate_Changed_To_CreateDate")]
+    partial class LastProcessedDate_Changed_To_CreateDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

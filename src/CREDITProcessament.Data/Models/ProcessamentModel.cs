@@ -8,6 +8,6 @@ namespace CREDITProcessament.Data.Models
         public string UserCPF { get; set; }
         public int Score { get; set; }
         public bool IsProcessed { get; set; }
-        public DateTime LastProcessedDate { get; set; }
+        public DateTime CreateDate { get; set; }
     }
 }
