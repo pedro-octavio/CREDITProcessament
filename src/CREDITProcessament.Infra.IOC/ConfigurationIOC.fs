@@ -22,6 +22,9 @@ type ConfigurationIOC() = class
         containerBuilder.RegisterType<UpdateUserValidator>().As<IValidator<UpdateUserRequestModel>>() |> ignore
 
         containerBuilder.RegisterType<UserRepository>().As<IUserRepository>() |> ignore
+        containerBuilder.RegisterType<ProcessamentRepository>().As<IProcessamentRepository>() |> ignore
+
         containerBuilder.RegisterType<UserService>().As<IUserService>() |> ignore
+        containerBuilder.RegisterType<ProcessamentService>().As<IProcessamentService>() |> ignore
 
 end
