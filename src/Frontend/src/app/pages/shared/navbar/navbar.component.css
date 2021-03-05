@@ -1,23 +1,16 @@
 @media (min-width:1024px) {
-    .header-menu .wrapper>.navigation>.list>.item {
-        position: relative;
-        display: inline-block;
-        margin-right: 35px;
-    }
     .header-menu .wrapper>.navigation>.list>.item>a {
         font-size: 25px;
     }
 }
 
 @media (max-width:1024px) {
+    .header-menu>.wrapper>.site-branding>h1 {
+        width: 180%;
+        height: 180%;
+    }
     .header-menu>.wrapper>.site-branding {
         max-width: 80px;
-    }
-    .header-menu .wrapper>.navigation>.list>.item {
-        position: relative;
-        display: inline-flex;
-        margin-left: 5px;
-        margin-right: 5px;
     }
     .header-menu .wrapper>.navigation>.list>.item>a {
         font-size: 18px;
@@ -25,51 +18,54 @@
 }
 
 .header-menu {
-    padding: 24px 0;
+    /* padding: 24px 0; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: #1e1e26;
-    padding: 12px 0;
+    /* padding: 12px 0; */
     z-index: 1120;
 }
 
 .header-menu .wrapper {
-    position: relative;
+    /* position: relative; */
     display: flex;
-    -webkit-box-pack: justify;
+    /* -webkit-box-pack: justify; */
     justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
+    /* -webkit-box-align: center; */
+    /* align-items: center; */
 }
 
 .wrapper {
-    max-width: 1202px;
-    margin: 0 auto;
-    padding: 12px;
+    padding: 0 10%;
+    /* max-width: 1202px;
+    margin: 0 auto; */
+    /* padding: 12px; */
 }
 
 .header-menu>.wrapper>.site-branding>h1 {
-    /* max-width: 80px; */
-    width: 180%;
-    height: 180%;
     background-image: url('src\assets\images\site-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0;
 }
 
 .header-menu>.wrapper>.site-branding>h1>a {
-    display: block;
+    /* display: block; */
     height: 100%;
     color: transparent;
 }
 
 .header-menu>.wrapper>.navigation {
     display: flex;
-    -webkit-box-align: center;
+    /* -webkit-box-align: center; */
     align-items: center;
+}
+
+.header-menu .wrapper>.navigation>.list>.item {
+    margin: 5px;
+    position: relative;
+    display: inline-flex;
 }
 
 .header-menu .wrapper>.navigation>.list>.item>a {
