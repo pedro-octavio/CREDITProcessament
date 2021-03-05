@@ -1,0 +1,125 @@
+@media (min-width:1024px) {
+    .header-menu {
+        padding: 24px 0;
+    }
+    .header-menu>.wrapper>.site-branding {
+        max-width: 80px;
+    }
+    .header-menu>.wrapper>.navigation-desktop {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .header-menu .wrapper>.navigation-desktop>.list>.item {
+        position: relative;
+        display: inline-block;
+        margin-right: 35px;
+    }
+    .header-menu .wrapper>.navigation-desktop>.list>.item>a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+    }
+}
+
+.header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1e1e26;
+    z-index: 1120;
+}
+
+.header-menu .wrapper {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1202px;
+    margin: auto;
+    padding: 12px;
+}
+
+.header-menu>.wrapper>.site-branding>h1 {
+    width: 180%;
+    height: 180%;
+    background-image: url('src\assets\images\site-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+
+.header-menu>.wrapper>.site-branding>h1>a {
+    display: block;
+    height: 100%;
+    color: transparent;
+}
+
+.header-menu .wrapper>.navigation-desktop>.list>.item>a {
+    font-size: 23px;
+}
+
+.header-menu .wrapper>.navigation-desktop>.list>.item>a:hover {
+    color: DarkSlateGray;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+header {
+    display: block;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+ul, li {
+    list-style: none;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
