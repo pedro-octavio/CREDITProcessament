@@ -1,38 +1,42 @@
 @media (min-width:1024px) {
-    .header-menu {
-        padding: 24px 0;
-    }
-    .header-menu>.wrapper>.site-branding {
-        max-width: 80px;
-    }
-    .header-menu>.wrapper>.navigation-desktop {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-    }
-    .header-menu .wrapper>.navigation-desktop>.list>.item {
+    .header-menu .wrapper>.navigation>.list>.item {
         position: relative;
         display: inline-block;
         margin-right: 35px;
     }
-    .header-menu .wrapper>.navigation-desktop>.list>.item>a {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: #fff;
+    .header-menu .wrapper>.navigation>.list>.item>a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-menu>.wrapper>.site-branding {
+        max-width: 80px;
+    }
+    .header-menu .wrapper>.navigation>.list>.item {
+        position: relative;
+        display: inline-flex;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .header-menu .wrapper>.navigation>.list>.item>a {
+        font-size: 18px;
     }
 }
 
 .header-menu {
+    padding: 24px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: #1e1e26;
+    padding: 12px 0;
     z-index: 1120;
 }
 
 .header-menu .wrapper {
+    position: relative;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -42,11 +46,12 @@
 
 .wrapper {
     max-width: 1202px;
-    margin: auto;
+    margin: 0 auto;
     padding: 12px;
 }
 
 .header-menu>.wrapper>.site-branding>h1 {
+    /* max-width: 80px; */
     width: 180%;
     height: 180%;
     background-image: url('src\assets\images\site-logo.png');
@@ -61,12 +66,16 @@
     color: transparent;
 }
 
-.header-menu .wrapper>.navigation-desktop>.list>.item>a {
-    font-size: 23px;
+.header-menu>.wrapper>.navigation {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
-.header-menu .wrapper>.navigation-desktop>.list>.item>a:hover {
-    color: DarkSlateGray;
+.header-menu .wrapper>.navigation>.list>.item>a {
+    font-weight: 500;
+    line-height: 19px;
+    color: #fff;
 }
 
 * {
@@ -90,6 +99,10 @@ body {
 
 html, body {
     overflow-x: hidden;
+}
+
+nav {
+    display: block;
 }
 
 ul {
