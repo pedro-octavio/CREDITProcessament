@@ -1,0 +1,28 @@
+@media (min-width:1024px) {
+    #content {
+        padding-top: 140px;
+    }
+}
+
+*, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body #content {
+    width: 100%;
+}
+
+#content {
+    position: relative;
+    padding-bottom: 48px;
+}
+
+#main {
+    position: relative;
+    display: block;
+}
+
+.site-main {
+    padding: 0 45px 0 45px;
+}
