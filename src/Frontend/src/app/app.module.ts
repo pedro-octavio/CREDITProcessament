@@ -6,12 +6,14 @@ import { AppComponent } from './app.component'
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component'
 import { NavbarComponent } from './pages/shared/navbar/navbar.component'
+import { FooterComponent } from './pages/shared/footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
