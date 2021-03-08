@@ -1,10 +1,23 @@
 <section>
 
+    <div class='center'>
+
+        <button class='btn btn-add space-between'>Add new User</button>
+
+        <button class='btn btn-find space-between'>Find a User</button>
+
+        <button class='btn btn-load space-between'>Load Users</button>
+
+    </div>
+
+    <hr>
+
     <div *ngFor='let user of users'>
 
         <div class='user-list'>
 
             <div>
+
                 <p>Name: {{user.name}}, CPF: {{user.cpf}}</p>
 
                 <div>
@@ -17,6 +30,12 @@
             </div>
 
         </div>
+
+    </div>
+
+    <div *ngIf='users == null'>
+
+        <p class='center'>not users loaded</p>
 
     </div>
 

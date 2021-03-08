@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+
 import { GetAllUsersResponseModel } from 'src/app/models/responseModels/GetAllUsersResponseModel'
 
 @Component({
