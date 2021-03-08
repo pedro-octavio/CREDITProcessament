@@ -1,1 +1,23 @@
-<p>dashboard works!</p>
+<section>
+
+    <div *ngFor='let user of users'>
+
+        <div class='user-list'>
+
+            <div>
+                <p>Name: {{user.name}}, CPF: {{user.cpf}}</p>
+
+                <div>
+
+                    <button class='btn btn-update'>Update</button>
+                    <button class='btn btn-delete'>Delete</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

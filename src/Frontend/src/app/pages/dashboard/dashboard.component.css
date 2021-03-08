@@ -1,0 +1,49 @@
+.user-list {
+    width: 100%;
+    /* padding: 15px; */
+    border: 1px solid #1e1e26;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.user-list>div {
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+}
+
+.user-list>div>p {
+    padding: 0 0 0 10%;
+}
+
+.user-list>div>div>button {
+    margin: 10px;
+}
+
+.user-list>div>div {
+    position: absolute;
+    /* bottom: 20px; */
+    right: 20px;
+}
+
+.btn {
+    display: inline-block;
+    /* font-weight: 100; */
+    font-size: 18px;
+    /* line-height: 123px; */
+    border: 1px solid transparent;
+    padding: 8px;
+    /* padding: 6px 14px 10px 10px; */
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+}
+
+.btn-update {
+    background-color: yellow;
+}
+
+.btn-delete {
+    background-color: red;
+}
