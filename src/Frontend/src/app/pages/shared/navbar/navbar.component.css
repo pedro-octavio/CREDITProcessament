@@ -1,6 +1,6 @@
 @media (min-width:1024px) {
     .header-menu .wrapper>.navigation>.list>.item>a {
-        font-size: 25px;
+        font-size: 18px;
     }
 }
 
@@ -72,6 +72,12 @@
     font-weight: 500;
     line-height: 19px;
     color: #fff;
+}
+
+.vertical-line {
+    margin:0px;
+    height: 15px;
+    border-right: 1px solid #87cefa;
 }
 
 * {
