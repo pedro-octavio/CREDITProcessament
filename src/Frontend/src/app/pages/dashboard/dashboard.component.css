@@ -30,6 +30,7 @@
     display: inline-block;
     /* font-weight: 100; */
     font-size: 18px;
+    color: #fff;
     /* line-height: 123px; */
     border: 1px solid transparent;
     padding: 8px;
@@ -37,13 +38,17 @@
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
-    width: 120px;
+    width: 160px;
 }
 
 .btn-update {
-    background-color: yellow;
+    background-color: #008B8B;
 }
 
 .btn-delete {
-    background-color: red;
+    background-color: #ff0000;
+}
+
+.btn-add {
+    background-color: #008000;
 }
