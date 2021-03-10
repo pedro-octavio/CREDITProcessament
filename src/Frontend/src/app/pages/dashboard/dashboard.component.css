@@ -78,6 +78,14 @@
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
+    /* width: 160px; */
+}
+
+.width95 {
+    width: 95px;
+}
+
+.width160 {
     width: 160px;
 }
 
