@@ -1,63 +1,68 @@
-<h1>Add New User</h1>
+<div>
 
-<form [formGroup]='userForm' (ngSubmit)='add()'>
+    <h1>Add New User</h1>
 
-    <div>
+    <form [formGroup]='userForm' (ngSubmit)='add()'>
 
-        <label for='cpf'>CPF:</label>
-        <input type='text' formControlName='cpf' />
+        <div>
 
-        <div *ngIf='!cpf.pristine && cpf.errors'>
+            <div>
 
-            <p *ngIf='cpf.errors.required'>
+                <label for='cpf'>CPF:</label>
+                <input type='text' formControlName='cpf' />
 
-                The CPF cannot be null.
+                <div *ngIf='!cpf.pristine && cpf.errors'>
 
-            </p>
+                    <p *ngIf='cpf.errors.required'>
 
-            <p *ngIf='cpf.errors.cpfInvalidLength'>
+                        The CPF cannot be null.
 
-                The length of CPF is 11 characters.
+                    </p>
 
-            </p>
+                    <p *ngIf='cpf.errors.cpfInvalidLength'>
+
+                        The length of CPF is 11 characters.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <label for='name'>Name:</label>
+                <input type='text' formControlName='name' />
+
+                <div *ngIf='!name.pristine && name.errors'>
+
+                    <p *ngIf='name.errors.required'>
+
+                        The Name cannot be null.
+
+                    </p>
+
+                    <p *ngIf='name.errors.maxlength'>
+
+                        The maximum length of Name is 120 characters.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr class='center'>
+
+            <div class='center'>
+
+                <button mat-dialog-close class='btn btn-delete'>Close</button>
+                <button [disabled]='!userForm.valid' type='submit' class='btn btn-add'>Add</button>
+
+            </div>
 
         </div>
 
-    </div>
+    </form>
 
-    <div>
-
-        <label for='name'>Name:</label>
-        <input type='text' formControlName='name' />
-
-        <div *ngIf='!name.pristine && name.errors'>
-
-            <p *ngIf='name.errors.required'>
-
-                The Name cannot be null.
-
-            </p>
-
-            <p *ngIf='name.errors.maxlength'>
-
-                The maximum length of Name is 120 characters.
-
-            </p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div mat-dialog-actions>
-
-        <button mat-dialog-close>Close</button>
-        <button [disabled]='!userForm.valid' type='submit'>Add</button>
-
-    </div>
-
-    {{userForm.value|json}}
-    {{userForm.valid|json}}
-
-</form>
+</div>
