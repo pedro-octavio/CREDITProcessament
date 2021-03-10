@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core'
+import { MatDialog } from '@angular/material/dialog'
 
 import { GetAllUsersResponseModel } from 'src/app/models/responseModels/GetAllUsersResponseModel'
+import { AddNewUserComponent } from '../dialogs/add-new-user/add-new-user.component'
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +11,7 @@ import { GetAllUsersResponseModel } from 'src/app/models/responseModels/GetAllUs
 })
 
 export class DashboardComponent implements OnInit {
-  constructor() {
+  constructor(private dialog: MatDialog) {
 
   }
 
@@ -32,5 +34,9 @@ export class DashboardComponent implements OnInit {
       { name: 'Luís Luiz Nicolas Jesus', cpf: '92293953408' },
       { name: 'Felipe Luís Cauê Araújo', cpf: '48833940420' },
     ]
+  }
+
+  openAddNewUserDialog(): void {
+    this.dialog.open(AddNewUserComponent)
   }
 }
