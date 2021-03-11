@@ -1,1 +1,45 @@
-<p>find-user works!</p>
+<div>
+
+    <h1>Find a User</h1>
+
+    <form [formGroup]='userForm' (ngSubmit)='find()'>
+
+        <div>
+
+            <div>
+
+                <label for='cpf'>CPF:</label>
+                <input type='text' formControlName='cpf' class='width-100percent margin-top-12px margin-bottom-12px font-size-16' />
+
+                <ul *ngIf='!cpf.pristine && cpf.errors'>
+
+                    <li *ngIf='cpf.errors.required'>
+
+                        <p class='font-size-14'>The CPF cannot be null.</p>
+
+                    </li>
+
+                    <li *ngIf='cpf.errors.cpfInvalidLength'>
+
+                        <p class='font-size-14'>The length of CPF is 11 characters.</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr class='center hr-25'>
+
+            <div class='center'>
+
+                <button mat-dialog-close class='btn btn-delete margin-5 font-size-16'>Close</button>
+                <button [disabled]='!userForm.valid' type='submit' [className]='userForm.valid ? "btn btn-find margin-5 font-size-16" : "btn btn-disabled margin-5 font-size-16"'>Find</button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
