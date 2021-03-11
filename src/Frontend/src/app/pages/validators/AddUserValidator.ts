@@ -2,9 +2,9 @@ import { AbstractControl } from '@angular/forms'
 
 export class AddUserValidator {
     static CPFValidation(control: AbstractControl): any {
-        const cpf: string = control.value
+        let cpf = control.value
 
-        if (cpf.length == 11) {
+        if (cpf != null && cpf.length == 11) {
             return null
         }
         else {

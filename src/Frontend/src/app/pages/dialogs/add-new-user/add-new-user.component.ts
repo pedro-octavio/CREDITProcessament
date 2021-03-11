@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { MatDialogRef } from '@angular/material/dialog'
+
+import { ToastrService } from 'ngx-toastr'
 
 import { AddUserRequestModel } from 'src/app/models/requestModels/AddUserRequestModel'
+
 import { AddUserValidator } from '../../validators/addUserValidator'
 
 @Component({
@@ -11,7 +15,8 @@ import { AddUserValidator } from '../../validators/addUserValidator'
 })
 
 export class AddNewUserComponent implements OnInit {
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private dialogRef: MatDialogRef<AddNewUserComponent>, private formBuilder: FormBuilder,
+              private toastrService: ToastrService) {
 
   }
 
@@ -41,9 +46,9 @@ export class AddNewUserComponent implements OnInit {
 
     const user = new AddUserRequestModel(formData.cpf, formData.name)
 
-    console.log(user)
+    this.toastrService.success('User Added Successfully.', 'User')
 
-    this.userForm.reset()
+    this.dialogRef.close()
   }
 
   get cpf(): any {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { MatDialog } from '@angular/material/dialog'
 
 import { GetAllUsersResponseModel } from 'src/app/models/responseModels/GetAllUsersResponseModel'
+
 import { AddNewUserComponent } from '../dialogs/add-new-user/add-new-user.component'
 
 @Component({
@@ -37,6 +38,8 @@ export class DashboardComponent implements OnInit {
   }
 
   openAddNewUserDialog(): void {
-    this.dialog.open(AddNewUserComponent)
+    this.dialog.open(AddNewUserComponent, {
+      width: '450px'
+    })
   }
 }
