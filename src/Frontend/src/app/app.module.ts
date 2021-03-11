@@ -12,6 +12,7 @@ import { AppComponent } from './app.component'
 import { DashboardComponent } from './pages/dashboard/dashboard.component'
 
 import { AddNewUserComponent } from './pages/dialogs/add-new-user/add-new-user.component'
+import { FindUserComponent } from './pages/dialogs/find-user/find-user.component'
 
 import { FooterComponent } from './pages/shared/footer/footer.component'
 import { NavbarComponent } from './pages/shared/navbar/navbar.component'
@@ -22,7 +23,8 @@ import { NavbarComponent } from './pages/shared/navbar/navbar.component'
     DashboardComponent,
     NavbarComponent,
     FooterComponent,
-    AddNewUserComponent
+    AddNewUserComponent,
+    FindUserComponent
   ],
   imports: [
     BrowserModule,

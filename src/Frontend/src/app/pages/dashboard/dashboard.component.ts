@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog'
 import { GetAllUsersResponseModel } from 'src/app/models/responseModels/GetAllUsersResponseModel'
 
 import { AddNewUserComponent } from '../dialogs/add-new-user/add-new-user.component'
+import { FindUserComponent } from '../dialogs/find-user/find-user.component'
 
 @Component({
   selector: 'app-dashboard',
@@ -39,6 +40,12 @@ export class DashboardComponent implements OnInit {
 
   openAddNewUserDialog(): void {
     this.dialog.open(AddNewUserComponent, {
+      width: '450px'
+    })
+  }
+
+  openFindUser(): void {
+    this.dialog.open(FindUserComponent, {
       width: '450px'
     })
   }
