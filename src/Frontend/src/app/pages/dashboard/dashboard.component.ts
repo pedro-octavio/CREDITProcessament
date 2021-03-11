@@ -26,6 +26,22 @@ export class DashboardComponent implements OnInit {
   users: GetAllUsersResponseModel[]
 
   ngOnInit(): void {
+
+  }
+
+  openAddNewUserDialog(): void {
+    this.dialog.open(AddNewUserComponent, {
+      width: '450px'
+    })
+  }
+
+  openFindUser(): void {
+    this.dialog.open(FindUserComponent, {
+      width: '450px'
+    })
+  }
+
+  loadUsers(): void {
     this.users = [
       { name: 'Fernando Marcos Vinicius da Luz', cpf: '95592318049' },
       { name: 'Sandra Eloá Vanessa da Silva', cpf: '25028704961' },
@@ -42,17 +58,5 @@ export class DashboardComponent implements OnInit {
       { name: 'Luís Luiz Nicolas Jesus', cpf: '92293953408' },
       { name: 'Felipe Luís Cauê Araújo', cpf: '48833940420' },
     ]
-  }
-
-  openAddNewUserDialog(): void {
-    this.dialog.open(AddNewUserComponent, {
-      width: '450px'
-    })
-  }
-
-  openFindUser(): void {
-    this.dialog.open(FindUserComponent, {
-      width: '450px'
-    })
   }
 }
