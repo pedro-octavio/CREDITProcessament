@@ -2,15 +2,15 @@
 
     <div class='center'>
 
-        <button (click)='openAddNewUserDialog()' class='btn btn-add width160 space-between'>Add new User</button>
+        <button (click)='openAddNewUserDialog()' class='btn btn-add width-160px font-size-18 margin-5'>Add new User</button>
 
-        <button (click)='openFindUser()' class='btn btn-find width160 space-between'>Find a User</button>
+        <button (click)='openFindUser()' class='btn btn-find width-160px font-size-18 space-between margin-5'>Find a User</button>
 
-        <button class='btn btn-load width160 space-between'>Load Users</button>
+        <button class='btn btn-load width-160px font-size-18 space-between margin-5'>Load Users</button>
 
     </div>
 
-    <hr>
+    <hr class='hr-25'>
 
     <div *ngFor='let user of users'>
 
@@ -22,8 +22,8 @@
 
                 <div>
 
-                    <button class='btn btn-update width95'>Update</button>
-                    <button class='btn btn-delete width95'>Delete</button>
+                    <button class='btn btn-update font-size-16 width-95px'>Update</button>
+                    <button class='btn btn-delete font-size-16 width-95px'>Delete</button>
 
                 </div>
 

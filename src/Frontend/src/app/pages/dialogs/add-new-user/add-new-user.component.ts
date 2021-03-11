@@ -6,12 +6,19 @@ import { ToastrService } from 'ngx-toastr'
 
 import { AddUserRequestModel } from 'src/app/models/requestModels/AddUserRequestModel'
 
-import { AddUserValidator } from '../../validators/addUserValidator'
+import { UserValidator } from '../../validators/UserValidator'
 
 @Component({
   selector: 'app-add-new-user',
   templateUrl: './add-new-user.component.html',
-  styleUrls: ['./add-new-user.component.css']
+  styleUrls: ['./add-new-user.component.css',
+    '../../../../assets/css/elements.css',
+    '../../../../assets/css/margin.css',
+    '../../../../assets/css/buttons.css',
+    '../../../../assets/css/font-size.css',
+    '../../../../assets/css/width.css',
+    '../../../../assets/css/text-align.css',
+    '../../../../assets/css/shared.css']
 })
 
 export class AddNewUserComponent implements OnInit {
@@ -32,7 +39,7 @@ export class AddNewUserComponent implements OnInit {
     this.userForm = this.formBuilder.group({
       cpf: ['', Validators.compose([
         Validators.required,
-        AddUserValidator.CPFValidation
+        UserValidator.CPFValidation
       ])],
       name: ['', Validators.compose([
         Validators.required,

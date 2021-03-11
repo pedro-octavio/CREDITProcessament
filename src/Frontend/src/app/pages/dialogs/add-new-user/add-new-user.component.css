@@ -1,79 +1,11 @@
 @media (min-width:1024px) {
-    div>button {
+    .btn {
         width: 140px;
     }
 }
 
 @media (max-width:1024px) {
-    div>button {
+    .btn {
         width: 100%;
     }
-}
-
-* {
-    font-family: 'Poppins', sans-serif;
-    /* display:inline-block; */
-    /* padding: 0 5%; */
-}
-
-div {
-    display: block
-}
-
-input {
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-size: 16px;
-}
-
-hr {
-    width: 25%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-div>button {
-    margin: 5px;
-}
-
-p {
-    text-align: justify;
-}
-
-li {
-    font-size: 14px;
-}
-
-.center {
-    text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    /* font-weight: 100; */
-    font-size: 16px;
-    color: #fff;
-    /* line-height: 123px; */
-    border: 1px solid transparent;
-    padding: 8px;
-    /* padding: 6px 14px 10px 10px; */
-    border-radius: 15px;
-    text-align: center;
-    /* width: 140px; */
-}
-
-.btn-delete {
-    background-color: #ff0000;
-    cursor: pointer;
-}
-
-.btn-add {
-    background-color: #008000;
-    cursor: pointer;
-}
-
-.btn-disabled {
-    background-color: #808080;
-    cursor: default;
 }

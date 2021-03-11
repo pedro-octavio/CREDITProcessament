@@ -9,19 +9,19 @@
             <div>
 
                 <label for='cpf'>CPF:</label>
-                <input type='text' formControlName='cpf' />
+                <input type='text' formControlName='cpf' class='width-100percent margin-top-12px margin-bottom-12px font-size-16' />
 
                 <ul *ngIf='!cpf.pristine && cpf.errors'>
 
                     <li *ngIf='cpf.errors.required'>
 
-                        The CPF cannot be null.
+                        <p class='font-size-14'>The CPF cannot be null.</p>
 
                     </li>
 
                     <li *ngIf='cpf.errors.cpfInvalidLength'>
 
-                        The length of CPF is 11 characters.
+                        <p class='font-size-14'>The length of CPF is 11 characters.</p>
 
                     </li>
 
@@ -32,19 +32,19 @@
             <div>
 
                 <label for='name'>Name:</label>
-                <input type='text' formControlName='name' />
+                <input type='text' formControlName='name' class='width-100percent margin-top-12px margin-bottom-12px font-size-16' />
 
                 <ul *ngIf='!name.pristine && name.errors'>
 
                     <li *ngIf='name.errors.required'>
 
-                        The Name cannot be null.
+                        <p class='font-size-14'>The Name cannot be null.</p>
 
                     </li>
 
                     <li *ngIf='name.errors.maxlength'>
 
-                        The maximum length of Name is 120 characters.
+                        <p class='font-size-14'>The maximum length of Name is 120 characters.</p>
 
                     </li>
 
@@ -52,12 +52,12 @@
 
             </div>
 
-            <hr class='center'>
+            <hr class='center hr-25'>
 
             <div class='center'>
 
-                <button mat-dialog-close class='btn btn-delete'>Close</button>
-                <button [disabled]='!userForm.valid' type='submit' [className]='userForm.valid ? "btn btn-add" : "btn btn-disabled"'>Add</button>
+                <button mat-dialog-close class='btn btn-delete margin-5 font-size-16'>Close</button>
+                <button [disabled]='!userForm.valid' type='submit' [className]='userForm.valid ? "btn btn-add margin-5 font-size-16" : "btn btn-disabled margin-5 font-size-16"'>Add</button>
 
             </div>
 

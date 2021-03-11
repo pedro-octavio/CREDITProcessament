@@ -9,7 +9,13 @@ import { FindUserComponent } from '../dialogs/find-user/find-user.component'
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css',
+    '../../../assets/css/buttons.css',
+    '../../../assets/css/font-size.css',
+    '../../../assets/css/width.css',
+    '../../../assets/css/margin.css',
+    '../../../assets/css/elements.css',
+    '../../../assets/css/shared.css']
 })
 
 export class DashboardComponent implements OnInit {
