@@ -4,6 +4,8 @@ import { MatDialogModule } from '@angular/material/dialog'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+import { ToastrModule } from 'ngx-toastr'
+
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
@@ -27,7 +29,8 @@ import { NavbarComponent } from './pages/shared/navbar/navbar.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
