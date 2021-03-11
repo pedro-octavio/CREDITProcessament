@@ -5,7 +5,6 @@ import { GetAllUsersResponseModel } from 'src/app/models/responseModels/GetAllUs
 
 import { AddNewUserComponent } from '../dialogs/add-new-user/add-new-user.component'
 import { FindUserComponent } from '../dialogs/find-user/find-user.component'
-import { LoadUsersComponent } from '../dialogs/load-users/load-users.component'
 
 @Component({
   selector: 'app-dashboard',
@@ -53,12 +52,6 @@ export class DashboardComponent implements OnInit {
 
   openFindUser(): void {
     this.dialog.open(FindUserComponent, {
-      width: '450px'
-    })
-  }
-
-  openLoadUsers(): void {
-    this.dialog.open(LoadUsersComponent, {
       width: '450px'
     })
   }
