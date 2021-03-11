@@ -1,0 +1,38 @@
+.btn {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 8px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btn-load {
+    background-color: #6495ED;
+    cursor: pointer;
+}
+
+.btn-find {
+    background-color: #00008B;
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: #008000;
+    cursor: pointer;
+}
+
+.btn-update {
+    background-color: #008B8B;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+.btn-disabled {
+    background-color: #808080;
+    cursor: default;
+}
